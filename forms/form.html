@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head></head>
+  <body>
+    <form action="/signup" method="post" name="sign-form" >
+      <!-- action 特性:定义表单信息将要发送去的地方,接受绝对、相对 URL 值 -->
+      <!-- method 特性:定义提交表单时所使用的 HTTP 方法  -->
+      <!-- name:定义一个唯一的表单名称 -->
+      <!-- autocomplete 特性:是否开启浏览器自动填充功能,仅接受 on 、off 两个值 -->
+      <!-- target 特性:定义提交表单后的页面操作 _blank -> 在新标签页打开页面 _self -> 在当前页面打开 _parent -> 打开上一个页面 -top -> 在当前页面打开并移动至页面顶部 -->
+      <!-- enctype 特性:定义传送至服务器的数据的 MIME type 注意:仅当 method 取值为 post 时,该项设置才生效 -->
+      <!-- novalidate 特性:取消浏览器在数据传送时的验证步骤 -->
+      <p>
+        <label for="">Name</label><br />
+        <input type="text" name="name" />
+      </p>
+      <p>
+        <label for="">Email</label><br />
+        <input type="email" name="email" />
+      </p>
+      <p>
+        <label for="">Phone Number</label><br />
+        <input type="tel" name="phone" />
+      </p>
+      <p>
+        <label for="">Password</label><br />
+        <input type="password" name="password" />
+      </p>
+      <p>
+        <label for="">Gender</label><br />
+        <label for="">
+          <input type="radio" name="title" value="male" />Male
+        </label>
+        <label for="">
+          <input type="radio" name="title" value="female" />Female
+        </label>
+      </p>
+      <p>
+        <label for="">Country</label><br />
+        <select name="" id="">
+          <option value="">China</option>
+          <option value="">US</option>
+          <option value="">Russia</option>
+        </select>
+      </p>
+      <p>
+        <label for=""
+          ><input type="checkbox" value="terms" />I agree to the
+          <a href="/terms">terms and conditions</a></label
+        >
+      </p>
+      <p>
+        <button>Sign up</button>
+        <button type="reset">Reset form</button>
+      </p>
+    </form>
+  </body>
+</html>

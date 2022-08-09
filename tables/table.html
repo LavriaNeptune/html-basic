@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid red;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- 定义一个表格数据的容器 -->
+      <caption>
+        Student
+      </caption>
+      <thead>
+        <!-- 往往放置 th -->
+        <tr>
+          <!-- tr:table row 用来定义表格中的一行数据,必须在位于 table 标签内部 -->
+          <th>name</th>
+          <!-- th:table head 用来定义表格标题行 -->
+          <th>age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 放置实际的表格数据 -->
+        <tr>
+          <td>Sakura</td>
+          <!-- td:table data 定义一个表格单元的数据内容,td 必须是 tr 的直接子元素 -->
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Tomoyo</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
